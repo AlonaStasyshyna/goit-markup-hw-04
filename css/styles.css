@@ -139,6 +139,11 @@ img {
   margin-left: 50px;
 }
 
+.contacts .link {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-icon {
   margin-right: 10px;
 
@@ -149,11 +154,19 @@ img {
 
 /* Герой */
 .hero {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -218,6 +231,18 @@ img {
 
 .qualities-list > .item + .item {
   margin-left: 30px;
+}
+
+.qualities-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--secondary-bg-color);
 }
 
 .qualities-title {
